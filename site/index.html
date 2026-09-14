@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suite Multimediale Pro - Portale Download</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">SM</div>
+        <div>
+          <p class="eyebrow">Catalogo legale</p>
+          <h1>Suite Multimediale Pro</h1>
+        </div>
+      </div>
+      <nav>
+        <a href="#catalogo">Catalogo</a>
+        <a href="#registrazione">Registrazione</a>
+        <a href="#download">Download</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Portale accessi riservati</p>
+          <h2>Emulatori, launcher e app della suite.</h2>
+          <p>
+            Questo portale raccoglie i contenuti già presenti nella cartella del progetto:
+            emulatori, app multimediali, browser, downloader e launcher TV. L’accesso richiede
+            registrazione per scaricare i pacchetti autorizzati.
+          </p>
+          <div class="hero-actions">
+            <a href="#registrazione" class="button primary">Registrati ora</a>
+            <a href="#catalogo" class="button secondary">Vedi catalogo</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="stat-grid">
+            <div class="stat">
+              <span id="platformCount">0</span>
+              <small>Piattaforme</small>
+            </div>
+            <div class="stat">
+              <span id="appCount">0</span>
+              <small>App</small>
+            </div>
+            <div class="stat">
+              <span id="toolCount">0</span>
+              <small>Strumenti</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="galleria" class="section gallery-section">
+        <div class="section-header">
+          <p class="eyebrow">Screenshot</p>
+          <h3>Gallery per categoria</h3>
+        </div>
+        <div id="galleryCategories" class="gallery-categories"></div>
+      </section>
+
+      <section id="catalogo" class="section">
+        <div class="section-header">
+          <p class="eyebrow">Analisi cartella</p>
+          <h3>Contenuti rilevati</h3>
+        </div>
+        <div id="catalogCards" class="card-grid"></div>
+      </section>
+
+      <section class="section highlight">
+        <div class="section-header">
+          <p class="eyebrow">Disclaimer</p>
+          <h3>Uso legale e corretto</h3>
+        </div>
+        <div class="legal-box">
+          <p>
+            Non ospitiamo file ROM protetti da copyright, né distribuiamo giochi pirata. Il sito
+            permette la registrazione e il download dei programmi della suite, degli emulatori
+            ufficiali e delle app open source già presenti in questa cartella, oltre a suggerire
+            fonti ufficiali e distribuzioni autorizzate.
+          </p>
+        </div>
+      </section>
+
+      <section id="registrazione" class="section form-section">
+        <div class="section-header">
+          <p class="eyebrow">Accesso riservato</p>
+          <h3>Registrati o accedi per scaricare</h3>
+        </div>
+
+        <div class="auth-grid">
+          <form id="signupForm" class="signup-form">
+            <h4>Registrazione</h4>
+            <div class="field-row">
+              <label>
+                Nome completo
+                <input type="text" id="fullName" required />
+              </label>
+              <label>
+                Email
+                <input type="email" id="email" required />
+              </label>
+            </div>
+            <div class="field-row">
+              <label>
+                Password
+                <input type="password" id="password" minlength="6" required />
+              </label>
+              <label>
+                Paese
+                <input type="text" id="country" value="Italia" required />
+              </label>
+            </div>
+            <label>
+              Tipo di accesso
+              <select id="accountType">
+                <option value="utente">Utente</option>
+                <option value="developer">Sviluppatore</option>
+                <option value="admin">Admin</option>
+              </select>
+            </label>
+            <button type="submit" class="button primary wide">Crea account</button>
+          </form>
+
+          <form id="loginForm" class="signup-form">
+            <h4>Login</h4>
+            <label>
+              Email
+              <input type="email" id="loginEmail" required />
+            </label>
+            <label>
+              Password
+              <input type="password" id="loginPassword" required />
+            </label>
+            <button type="submit" class="button secondary wide">Accedi</button>
+          </form>
+        </div>
+
+        <div id="registrationMessage" class="message hidden" aria-live="polite"></div>
+      </section>
+
+      <section id="download" class="section download-section hidden" aria-live="polite">
+        <div class="section-header">
+          <p class="eyebrow">Area download</p>
+          <h3>Pacchetti disponibili</h3>
+        </div>
+        <div class="download-grid">
+          <a class="download-card" href="/download/UniversalEmulatorbyDB.py" download>
+            <span class="tag">App</span>
+            <strong>Universal Emulator Pro</strong>
+            <small>Launcher emulatore multi-console</small>
+          </a>
+
+          <a class="download-card" href="/download/launch_tv_live_internazionale.py" download>
+            <span class="tag">App</span>
+            <strong>TV Live</strong>
+            <small>Launcher streaming televisivo</small>
+          </a>
+
+          <a class="download-card" href="/download/mediaplayer.py" download>
+            <span class="tag">Media</span>
+            <strong>Media Player</strong>
+            <small>Player multimediale personalizzato</small>
+          </a>
+
+          <a class="download-card" href="/download/browser.py" download>
+            <span class="tag">Web</span>
+            <strong>Browser</strong>
+            <small>Browser integrato con UI personalizzata</small>
+          </a>
+
+          <a class="download-card" href="/download/downloader.py" download>
+            <span class="tag">Tool</span>
+            <strong>Downloader</strong>
+            <small>Downloader multithread e download manager</small>
+          </a>
+
+          <a class="download-card" href="/download/emulators" target="_blank" rel="noreferrer">
+            <span class="tag">Emulatori</span>
+            <strong>Esplora cartella emulatori</strong>
+            <small>PS1, PS2, PSP, N64, SNES, GBA, NES, MAME, Xbox</small>
+          </a>
+
+          <a class="download-card" href="/download/grinpro_2_1_win64_1" target="_blank" rel="noreferrer">
+            <span class="tag">Tool</span>
+            <strong>GrinPro</strong>
+            <small>Strumento miner / software accessorio</small>
+          </a>
+
+          <a class="download-card" href="/download/downloads" target="_blank" rel="noreferrer">
+            <span class="tag">Archivi</span>
+            <strong>Downloads</strong>
+            <small>Cartella file scaricabili</small>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Suite Multimediale Pro © 2026</p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
