@@ -1,0 +1,7 @@
+{
+    "video_mode": "screen_webcam",
+    "use_mic": true,
+    "use_sys": true,
+    "mic_device_id": 0,
+    "sys_device_id": 4
+}

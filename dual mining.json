@@ -1,0 +1,20 @@
+{
+    "coin_gpu": "Vertcoin",
+    "algo_gpu": "verthash",
+    "pool_gpu": "vtc.italiamining.it:3050",
+    "wallet_gpu": "vtc1qrtsud4xgn8z3w73sry5kyh47geaynu9k2wmh4y",
+    "miner_gpu": "SRBMiner",
+    "extra_gpu": "",
+    "enable_gpu": true,
+    "wallet_gpu_dual": "AQ7B3o1hKMqNGo6mZq4wHdYQjjDSFGaEea",
+    "miner_gpu_dual": "WildRig",
+    "coin_cpu": "Monero",
+    "algo_cpu": "randomx",
+    "pool_cpu": "stratum+tcp://xmr.2miners.com:2222",
+    "wallet_cpu": "44srUu43tqEB5dr89yxXuG4wNauvEZSaXcHZRGESALm6MoVwHmg4UCjJ3Auu3jSaXRemXu5nRKY5Y9Mvq9hVPfs9CmB6KFU",
+    "miner_cpu": "XMRig",
+    "extra_cpu": "",
+    "enable_cpu": true,
+    "wallet_cpu_dual": "AQ7B3o1hKMqNGo6mZq4wHdYQjjDSFGaEea",
+    "miner_cpu_dual": "CPUMiner"
+}

@@ -1,0 +1,28 @@
+{
+    "settings": {
+        "dest_folder": "C:/Users/HP/Desktop/downloader/downloads"
+    },
+    "downloads": {
+        "https://www.davidefulgione.it/tv.m3u": {
+            "downloaded": 24179,
+            "total": 24179,
+            "path": "C:/Users/HP/Desktop/downloader/downloads\\tv.m3u",
+            "type": "http",
+            "initial_at_start": 0
+        },
+        "https://www.davidefulgione.it/tivu.m3u": {
+            "downloaded": 24179,
+            "total": 24179,
+            "path": "C:/Users/HP/Desktop/downloader/downloads\\tivu.m3u",
+            "type": "http",
+            "initial_at_start": 0
+        },
+        "https://tvit.leicaflorianrobert.dev/epg/list.xml": {
+            "downloaded": 64206,
+            "total": 0,
+            "path": "C:/Users/HP/Desktop/downloader/downloads\\list.xml",
+            "type": "http",
+            "initial_at_start": 0
+        }
+    }
+}
