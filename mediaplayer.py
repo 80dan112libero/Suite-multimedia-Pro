@@ -1,5 +1,5 @@
 import os
-# Silenzia l'avviso DPI di Qt6 su Windows prima di caricare altre librerie
+# Silenzia l'avviso DPI di Qt6 su Windows prima di caricare altre librerie.
 os.environ["QT_LOGGING_RULES"] = "qt.qpa.window=false"
 import json
 import sys
