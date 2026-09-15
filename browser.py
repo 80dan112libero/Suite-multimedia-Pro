@@ -514,3 +514,6 @@ if __name__ == "__main__":
     window = ModernBrowser()
     window.showMaximized()
     sys.exit(app.exec())
+
+
+#ciao a tutti!
